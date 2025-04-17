@@ -203,9 +203,11 @@ int SDL_VideoInit (const char *driver_name, Uint32 flags)
 	}
 	//SDL_SetError("driver_name driver_name driver_name: %s\n", driver_name);
 	//SDL_SetError("driver_name driver_name driver_name: %s\n", driver_name);
-	video = bootstrap[i]->create(index);
+	//video = bootstrap[i]->create(index);
 	SDL_SetError("bootstrap bootstrap bootstrap: %s\n", bootstrap[1]);
 	//fprintf(stderr, "SDL_SetError: %s\n", SDL_GetError());
+	fprintf(stderr, "available available1: %d\n", bootstrap[0]->available());
+	fprintf(stderr, "available available2: %d\n", bootstrap[1]->available());
 	fprintf(stderr, "vccc: %s\n", dffac);
 	fprintf(stderr, "vvvv: %d\n", i);
 	if ( video == NULL ) {
