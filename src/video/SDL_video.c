@@ -208,7 +208,7 @@ int SDL_VideoInit (const char *driver_name, Uint32 flags)
 	//fprintf(stderr, "SDL_SetError: %s\n", SDL_GetError());
 	fprintf(stderr, "available available1: %d\n", bootstrap[0]->available());
 	fprintf(stderr, "available available2: %d\n", bootstrap[1]->available());
-	fprintf(stderr, "JJJJJJJJJ: %s\n", dffac);
+	fprintf(stderr, "main: %s\n", dffac);
 	fprintf(stderr, "vccc: %s\n", dffac);
 	fprintf(stderr, "vvvv: %d\n", i);
 	if ( video == NULL ) {
