@@ -212,6 +212,7 @@ int SDL_VideoInit (const char *driver_name, Uint32 flags)
 	fprintf(stderr, "git: %s\n", dffac);
 	fprintf(stderr, "vccc: %s\n", dffac);
 	fprintf(stderr, "vvvv: %d\n", i);
+	fprintf(stderr, "llllllllll: %d\n", i);
 	if ( video == NULL ) {
 		//SDL_SetError("No available video device");
 		//SDL_SetError("No 1111111111");
