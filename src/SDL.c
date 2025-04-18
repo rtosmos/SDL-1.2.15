@@ -155,6 +155,7 @@ int SDL_Init(Uint32 flags)
 		return -1;
 	}
 #endif
+fprintf(stderr, "c2156sf\n");
 fprintf(stderr, "SDL_Init\n");
 	/* Clear the error message */
 	SDL_ClearError();
