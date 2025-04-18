@@ -85,6 +85,7 @@ int SDL_InitSubSystem(Uint32 flags)
 
 #if !SDL_VIDEO_DISABLED
 	/* Initialize the video/event subsystem */
+	fprintf(stderr, "SDL_InitSubSystem\n");
 	if ( (flags & SDL_INIT_VIDEO) && !(SDL_initialized & SDL_INIT_VIDEO) ) {
 		if ( SDL_VideoInit(SDL_getenv("SDL_VIDEODRIVER"),
 		                   (flags&SDL_INIT_EVENTTHREAD)) < 0 ) {
@@ -154,7 +155,7 @@ int SDL_Init(Uint32 flags)
 		return -1;
 	}
 #endif
-
+fprintf(stderr, "SDL_Init\n");
 	/* Clear the error message */
 	SDL_ClearError();
 
